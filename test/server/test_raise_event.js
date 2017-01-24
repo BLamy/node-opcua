@@ -4,14 +4,14 @@ require("requirish")._(module);
 /*global require,describe, it, before, after */
 var should = require("should");
 
-var server_engine = require("lib/server/server_engine");
+import ServerEngine from "lib/server/ServerEngine";
 var NodeClass = require("lib/datamodel/nodeclass").NodeClass;
 
 var DataType = require("lib/datamodel/variant").DataType;
 var Variant = require("lib/datamodel/variant").Variant;
 
 var AttributeIds = require("lib/services/read_service").AttributeIds;
-var AddressSpace = require("lib/address_space/address_space").AddressSpace;
+import AddressSpace from "lib/address_space/AddressSpace";
 var _ = require("underscore");
 var path = require("path");
 var assert = require("better-assert");
